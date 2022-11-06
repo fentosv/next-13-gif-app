@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  user-select: none;
+  gap: 3rem;
+
+  &__container {
+    width: var(--grid-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+}
+.image {
+  height: 4rem;
+  width: auto;
+}

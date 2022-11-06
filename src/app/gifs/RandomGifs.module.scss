@@ -1,0 +1,30 @@
+.grid {
+  --color-shine-dark: #e2e2e2;
+  --color-shine-light: #eff1f3;
+
+  display: flex;
+  gap: 1rem;
+  &__image {
+    width: 10rem;
+    height: 10rem;
+    &--shine {
+      animation: shimmer 2s infinite linear;
+      background: linear-gradient(
+        to right,
+        var(--color-shine-light) 4%,
+        var(--color-shine-dark) 25%,
+        var(--color-shine-light) 36%
+      );
+      background-size: 1000px 100%;
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
