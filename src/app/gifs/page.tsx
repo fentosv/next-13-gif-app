@@ -10,7 +10,7 @@ export default function Gifs() {
         {/* @ts-expect-error Async Server Component */}
         <RandomGifs />
       </Suspense>
-      <h1>Gifss</h1>
+      <h1>Gifs testing Image blur placeholder</h1>
       <section className='section'>
         {/* @ts-expect-error Async Server Component */}
         <GifsGrid />
